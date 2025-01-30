@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title>LOJA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Roboto, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f3f0f0;
+        }
+
+        .container-flex {
+            width: 100%;
+            padding: 16px 32px;
+            background-color: #686161;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-self: flex-start;
+            margin-right: 1000px;
+        }
+
+        #produtos-preço {
+            margin-top: 40px;
+        }
+
+        .container-produto {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .container-produto h2 {
+            color: #575252; 
+        }
+
+        .produtos {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap; 
+        }
+
+        .produto {
+            max-width: 300px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .produto p{
+            color: #746f6f;
+        }
+
+        .produto img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .produto button {
+            margin-top: 10px;
+            background-color: #686161;
+            border-radius: 30px;
+            width: 60%;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .produto button:hover {
+            background-color: #888383;
+        }
+
+        .produto h3{
+            color: #575252;
+        }
+
+        #sobre-a-loja {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 48px 0;
+            margin: 20px;
+        }
+
+        #sobre-a-loja h2 {
+            color: #575252;
+        }
+
+        #sobre-a-loja img {
+            width: 700px;
+            margin-right: 20px;
+        }
+
+        #sobre-a-loja h4 {
+            font-size: 20px;
+            max-width: 500px;
+            flex-grow: 1;
+            color: #888383;
+        }
+
+        @media screen and (max-width: 640px) {
+
+            .container-flex{
+                max-width: 1024px;
+                width: 100%;
+                margin: 0 auto;
+                flex-direction: column;
+                
+            }
+
+            .container-flex h1{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            #sobre-a-loja {
+              display: flex;             
+              flex-direction: column;
+              margin: 0;
+              padding: 32px;
+             }
+
+            #sobre-a-loja img {
+                margin-bottom: 24px;
+                padding: 0;
+                height: auto;
+            }
+
+            #sobre-a-loja h4 {
+                max-width: 100%;
+            }
+
+            .produtos {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .produto {
+                margin-bottom: 20px;
+            }
+
+            .produto img{
+                margin-left: 0px;
+            }
+
+            .table-primary{
+                margin-left: 0px;
+                width: 350px;
+            }
+
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            .container-flex {
+                max-width: 90%;
+            }
+
+            .container-flex h1{
+                font-size: 50px;
+            }
+
+            #sobre-a-loja h4{
+              font-size: 22px;
+            }
+
+            .table-primary tbody, th {
+                font-size: 25px;
+            }
+
+            .container-produto p {
+                font-size: 30px;
+            }
+
+            .container-produto h2 {
+                list-style-type: none;
+            }
+
+            .produto h3{
+                font-size: 40px;
+            }
+
+            
+        }
+
+        header h1 {
+            color: white;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            margin-left: 16px;
+        }
+
+        td:nth-child(2) {
+            text-decoration: line-through;
+            color: rgb(12, 11, 11);
+        }
+
+        table {
+            max-width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container container-flex">
+            <h1>CARIMBO</h1>
+            <div>
+                <a href="#">Sobre a Loja</a>
+                <a href="#">Produto</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre-a-loja">
+        <div style="display: flex; align-items: center;">
+            <img src="imagens/Loja1.jpg" alt="Imagem da loja" style="max-width: 400px; border-radius: 50px; margin-right: 20px;">
+            <div>
+                <h2>Sobre a Carimbo</h2>
+                <h4>
+                    A <strong>Carimbo</strong> é uma loja virtual especializada em eletrônicos, oferecendo uma ampla variedade de celulares, tablets e acessórios de última geração. Com foco em tecnologia de ponta, a loja garante produtos de qualidade, além de um atendimento dedicado para atender às necessidades dos seus clientes de forma personalizada e eficiente.
+                </h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos-preço">
+        <div class="container-produto">
+            <h2>Nossos produtos</h2>
+            <div class="produtos">
+                <div class="produto">
+                    <img src="imagens/Celular.webp" alt="Celular XPhone Z8">
+                    <h3>XPhone Z8</h3>
+                    <p>O XPhone Z8 tem uma tela OLED de 6,7.</p>
+                    <button type="button">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="imagens/Tablett.jpg" alt="Tablet RXTablett">
+                    <h3>RXTablett</h3>
+                    <p>O RXTablett é de última geração.</p>
+                    <button type="button">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="imagens/Fone.jpg" alt="HeadTet ProMax">
+                    <h3>HeadTet ProMax</h3>
+                    <p>O HeadTet ProMax é inovador e estilizado.</p>
+                    <button type="button">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="imagens/RelogioWett.webp" alt="RelogioWett">
+                    <h3>RelogioWett</h3>
+                    <p>O RelogioWett é confortável e limitado.</p>
+                    <button type="button">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <table class="table table-primary">
+        <caption>Tabela dos produtos</caption>
+        <thead>
+            <th>Nome do produto</th>
+            <th>Preço</th>
+            <th>Desconto</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>XPhone Z8</td>
+                <td>R$ 3.400</td>
+                <td>R$ 2.300</td>
+            </tr>
+            <tr>
+                <td>RXTablett</td>
+                <td>R$ 4.500</td>
+                <td>R$ 3.500</td>
+            </tr>
+            <tr>
+                <td>HeadTet ProMax</td>
+                <td>R$ 6.500</td>
+                <td>R$ 4.500</td>
+            </tr>
+            <tr>
+                <td>RelogioWett</td>
+                <td>R$ 3.800</td>
+                <td>R$ 1.790</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="https://code.jquery.com/jquery.validate.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#telefone').mask('(00) 00000-0000', {
+                placeholder: ''
+            });
+
+            $('form').validate({
+                rules: {
+                    telefone: {
+                        required: true
+                    }
+                }
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
